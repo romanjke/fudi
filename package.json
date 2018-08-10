@@ -1,0 +1,38 @@
+{
+  "name": "fudi",
+  "version": "1.0.0",
+  "description": "Creating a landing page using free psd template Fudi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romanjke/fudi.git"
+  },
+  "author": "Roman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romanjke/fudi/issues"
+  },
+  "homepage": "https://github.com/romanjke/fudi#readme",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "gulp-useref": "^3.1.2",
+    "rimraf": "^2.5.4"
+  },
+  "dependencies": {
+    "normalize.scss": "^0.1.0"
+  }
+}
