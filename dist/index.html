@@ -1,24 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <title>Fudi</title>
-    <meta charset="utf-8"/>
-    <meta content="Bekades" name="author"/>
-    <meta content="Find your favorite recipes" name="description"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width"/>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      
-    </p>
-    <script src="js/main.js"></script>
-  </body>
+  <nav class="nav" id="menu">
+    <ul class="nav__list">
+      <li class="nav__item"><a class="nav__link" href="#home">home</a></li>
+      <li class="nav__item"><a class="nav__link" href="#service">service</a></li>
+      <li class="nav__item"><a class="nav__link" href="#the app">the app</a></li>
+      <li class="nav__item"><a class="nav__link" href="#testimonial">testimonial</a></li>
+      <li class="nav__item"><a class="nav__link" href="#browse the recipes">browse the recipes</a></li>
+    </ul>
+  </nav>
+  <div class="page push">
+    <head>
+      <title>Fudi</title>
+      <meta charset="utf-8"/>
+      <meta content="Bekades" name="author"/>
+      <meta content="Find your favorite recipes" name="description"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <meta name="viewport" content="width=device-width"/>
+      <!-- build:css css/main.css-->
+      <link rel="stylesheet" href="css/main.css"/>
+      <!-- endbuild-->
+      <!-- build:css css/slideout.css-->
+      <link rel="stylesheet" href="css/slideout.css"/>
+      <!-- endbuild-->
+    </head>
+    <body id="home">
+      <header class="header">
+        <div class="container">
+          <div class="header__top">
+            <div class="header__logo"><a src=""></a><img src="img/logo.png" alt="Logo"/></div>
+            <div class="header__links"><a class="header__link" href="#">Log&nbsp;in</a><a class="header__link" href="#">Sign&nbsp;up</a><a class="header__link" href="#menu">
+                <svg class="header__nav-toggle" width="14" height="10" viewBox="0 0 14 10">
+                  <rect y="0" width="14" height="2"></rect>
+                  <rect y="4" width="14" height="2"></rect>
+                  <rect y="8" width="14" height="2"></rect>
+                </svg></a></div>
+          </div>
+          <div class="header__content">
+            <div class="header__about">Find your Favorite</div>
+            <h1 class="header__title">recipes</h1>
+            <button class="button button--transparent header__button">Get started</button>
+            <div class="header__text">or send us your own recipes and <a class="header__text-link" href="#">get rewarded</a>!</div>
+          </div>
+        </div>
+      </header>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        
+        
+      </p>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- build:js js/bigSlide.js-->
+      <script src="js/bigSlide.js"></script>
+      <!-- endbuild-->
+      <!-- build:js js/jquery.nav.js-->
+      <script src="js/jquery.nav.js"></script>
+      <!-- endbuild-->
+      <!-- build:js js/main.js-->
+      <script src="js/main.js"></script>
+      <!-- endbuild-->
+    </body>
+  </div>
 </html>

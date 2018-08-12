@@ -1,0 +1,86 @@
+.header {
+    background: fixed url(../../img/header-bg.jpg) center/cover no-repeat;
+    min-height: 880px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        position: relative;
+        left: -30px;
+        top: -2px;
+    }
+
+    &__links {
+        font-family: $main-font;
+        font-size: 0.875rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 110px;
+        margin-right: -15px;
+    }
+
+    &__link {
+        padding: 0 15px;
+        text-decoration: none;
+        color: #FFF;
+        text-shadow: 0px 0px 40px rgba(0,0,0,0.55);
+
+        &:hover {
+            color: $main-color, 5%);
+        }
+    }
+
+    &__nav-toggle {
+        fill: #fff;
+
+        &:hover{
+            fill: darken($main-color, 5%);
+        }
+    }
+
+    &__content {
+        padding: 245px 0 240px;
+        text-align: center;
+        color: #FFF;
+    }
+
+    &__about {
+        font-family: 'Times New Roman';
+        font-size:  2.25rem;
+        font-weight: 700;
+        font-style: italic;
+        margin-bottom: 28px;
+        text-shadow: 0px 0px 40px rgba(0,0,0,0.55);
+    }
+
+    &__title {
+        font-size: 6.25rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 40px;
+        text-shadow: 0px 0px 40px rgba(0,0,0,0.55);
+    }
+
+    &__text {
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        text-shadow: 0px 0px 40px rgba(0,0,0,0.55);
+    }
+
+    &__text-link {
+        color: #FFF;
+        font-weight: 700;
+
+        &:hover {
+            color: darken($main-color, 5%);
+            text-decoration: none;
+        }
+    }
+
+    &__button {
+        margin-bottom: 40px;
+    }
+}

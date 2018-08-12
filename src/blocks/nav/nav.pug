@@ -1,0 +1,8 @@
+mixin nav()
+    - var items = ['home', 'service', 'the app', 'testimonial', 'browse the recipes']
+
+    nav.nav#menu
+        ul.nav__list
+            each item in items
+                li.nav__item
+                    a(href="#" + item).nav__link= item

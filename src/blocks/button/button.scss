@@ -1,0 +1,22 @@
+.button {
+    padding: 0 78px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125rem;
+    font-family: $main-font;
+    font-weight: 700;
+    line-height: 62px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+    &--transparent {
+        background: transparent;
+        transition: 0.3s;
+        border: 3px solid #fff;
+
+        &:hover {
+            background: $main-color;
+            border-color: $main-color;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.nav {
+    background: #161616;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+
+    &__list {
+        margin: auto;
+        padding: 35px;
+    }
+
+    &__item {
+        border-bottom: 1px solid #818181;
+    }
+
+    &__link {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
