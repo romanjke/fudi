@@ -1,0 +1,19 @@
+.icon {
+    display: inline-block;
+
+    &--gamburger {
+        @include sprite($gamburger);
+    }
+
+    &--money {
+        @include sprite($money);
+    }
+
+    &--cook {
+        @include sprite($cook);
+    }
+
+    &--center {
+        @include center-xy();
+    }
+}

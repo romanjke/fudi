@@ -1,0 +1,23 @@
+.about {
+    padding: 100px 0;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 360px;
+    }
+
+    &__icon {
+        position: relative;
+        border: 2px solid black;
+        border-radius: 50%;
+        width: 107px;
+        height: 107px;
+        margin: 0 auto 20px;
+    }
+}

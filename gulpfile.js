@@ -15,7 +15,8 @@ var useref = require('gulp-useref'),
 	uglify = require('gulp-uglify'),
 	rimraf = require('rimraf'),
 	notify = require('gulp-notify'),
-	rename = require('gulp-rename');
+	rename = require('gulp-rename'),
+	spritesmith = require('gulp.spritesmith');
 
 var paths = {
 	blocks: 'src/blocks/',
@@ -65,6 +66,19 @@ gulp.task('vendor:css', function() {
 gulp.task('vendor:js', function() {
 	return gulp.src(paths.vendor + 'js/*.js')
 		.pipe(gulp.dest(paths.outputDir + 'js/'));
+});
+
+gulp.task('sprite', function(cb) {
+	var spriteData = gulp.src('src/icons/*.png')
+		.pipe(spritesmith({
+			imgName: 'sprite.png',
+			imgPath: '../img/sprite.png',
+			cssName: 'sprite.scss'
+		}));
+
+	spriteData.img.pipe(gulp.dest('dist/img/'));
+	spriteData.css.pipe(gulp.dest('src/blocks/_base/'));
+  	cb();
 });
 
 //watch
