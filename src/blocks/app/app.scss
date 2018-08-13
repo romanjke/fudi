@@ -1,0 +1,38 @@
+.app {
+    background: #f7f7f7;
+    padding: 102px 0;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        width: 55%;
+    }
+
+    &__right {
+        width: 45%;
+    }
+
+    &__image-wrap {
+        /*padding-right: 120px;*/
+        margin-bottom: -102px;
+        overflow: hidden;
+    }
+
+    &__image {
+        width: 100%;
+        max-width: 548px;
+        margin: 0 0 -180px -28px;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+    }
+
+    &__icon-link {
+        text-decoration: none;
+        margin-right: 10px;
+    }
+}

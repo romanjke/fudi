@@ -4,8 +4,8 @@
     <ul class="nav__list">
       <li class="nav__item"><a class="nav__link" href="#home">home</a></li>
       <li class="nav__item"><a class="nav__link" href="#about">about</a></li>
-      <li class="nav__item"><a class="nav__link" href="#the app">the app</a></li>
-      <li class="nav__item"><a class="nav__link" href="#testimonial">testimonial</a></li>
+      <li class="nav__item"><a class="nav__link" href="#app">app</a></li>
+      <li class="nav__item"><a class="nav__link" href="#testimonials">testimonials</a></li>
       <li class="nav__item"><a class="nav__link" href="#browse the recipes">browse the recipes</a></li>
     </ul>
   </nav>
@@ -17,11 +17,14 @@
       <meta content="Find your favorite recipes" name="description"/>
       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
       <meta name="viewport" content="width=device-width"/>
-      <!-- build:css css/main.css-->
-      <link rel="stylesheet" href="css/main.css"/>
-      <!-- endbuild-->
       <!-- build:css css/slideout.css-->
       <link rel="stylesheet" href="css/slideout.css"/>
+      <!-- endbuild-->
+      <!-- build:css css/flexslider.css-->
+      <link rel="stylesheet" href="css/flexslider.css"/>
+      <!-- endbuild-->
+      <!-- build:css css/main.css-->
+      <link rel="stylesheet" href="css/main.css"/>
       <!-- endbuild-->
     </head>
     <body id="home">
@@ -50,7 +53,7 @@
             <li class="about__item">
               <div class="about__icon"><i class="icon icon--gamburger icon--center"></i></div>
               <h2 class="title title--center">Get inspired</h2>
-              <div class="text">
+              <div class="text text--center">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisc
                   Pellentesque vel enim a elit viverra elementuma.
@@ -61,7 +64,7 @@
             <li class="about__item">
               <div class="about__icon"><i class="icon icon--money icon--center"></i></div>
               <h2 class="title title--center">Get rewarded</h2>
-              <div class="text">
+              <div class="text text--center">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisc
                   Pellentesque vel enim a elit viverra elementuma.
@@ -72,7 +75,7 @@
             <li class="about__item">
               <div class="about__icon"><i class="icon icon--cook icon--center"></i></div>
               <h2 class="title title--center">Get social</h2>
-              <div class="text">
+              <div class="text text--center">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisc
                   Pellentesque vel enim a elit viverra elementuma.
@@ -83,12 +86,93 @@
           </ul>
         </div>
       </section>
+      <section class="app" id="app">
+        <div class="container">
+          <div class="app__wrap">
+            <div class="app__left">
+              <div class="app__image-wrap"><img class="app__image" src="img/iphone.png" alt="iPhone"/></div>
+            </div>
+            <div class="app__right">
+              <h2 class="title">Introducing the fudi app</h2>
+              <div class="app__text text">
+                <p>
+                  Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet
+                  felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest
+                  ibulum tristique. Suspendisse tristique lacus ac mattis porta.
+                  
+                </p>
+                <p>
+                  Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In
+                  libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas
+                  sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis.
+                  Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan.
+                  
+                </p>
+                <p>
+                  Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam
+                  malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices
+                  ante, a mattis massa.
+                  
+                </p>
+              </div>
+              <div class="app__icons"><a class="app__icon-link" href="#"><img src="img/appstore.png" alt="App Store"/></a><a class="app__icon-link" href="#"><img src="img/googleplay.png" alt="Google play"/></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <div class="flexslider slider">
+            <ul class="slides slider__list">
+              <li class="slider__item">
+                <div class="slider__image-wrap"><img class="slider__image" src="img/dawson-m.jpg" alt="Michael Dawson"/></div>
+                <blockquote class="slider__quote-wrap">
+                  <p class="slider__quote">
+                    “I am so happy because I found this recipe, and it just made my life easier.
+                    Thanks  so much for sharing!”
+                  </p>
+                  <footer class="slider__author">
+                    <cite>- Michael Dawson, San Francisco, CA -</cite>
+                  </footer>
+                </blockquote>
+              </li>
+              <li class="slider__item">
+                <div class="slider__image-wrap"><img class="slider__image" src="img/dawson-m.jpg" alt="Michael Dawson"/></div>
+                <blockquote class="slider__quote-wrap">
+                  <p class="slider__quote">
+                    “I am so happy because I found this recipe, and it just made my life easier.
+                    Thanks  so much for sharing!”
+                  </p>
+                  <footer class="slider__author">
+                    <cite>- Michael Dawson, San Francisco, CA -</cite>
+                  </footer>
+                </blockquote>
+              </li>
+              <li class="slider__item">
+                <div class="slider__image-wrap"><img class="slider__image" src="img/dawson-m.jpg" alt="Michael Dawson"/></div>
+                <blockquote class="slider__quote-wrap">
+                  <p class="slider__quote">
+                    “I am so happy because I found this recipe, and it just made my life easier.
+                    Thanks  so much for sharing!”
+                  </p>
+                  <footer class="slider__author">
+                    <cite>- Michael Dawson, San Francisco, CA -</cite>
+                  </footer>
+                </blockquote>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <!-- build:js js/bigSlide.js-->
       <script src="js/bigSlide.js"></script>
       <!-- endbuild-->
       <!-- build:js js/jquery.nav.js-->
       <script src="js/jquery.nav.js"></script>
+      <!-- endbuild-->
+      <!-- build:js js/jquery.flexslider.js-->
+      <script src="js/jquery.flexslider.js"></script>
       <!-- endbuild-->
       <!-- build:js js/main.js-->
       <script src="js/main.js"></script>

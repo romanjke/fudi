@@ -1,9 +1,12 @@
 .text {
-    text-align: center;
     margin: 0;
     font-size: 1rem;
     font-weight: 300;
     line-height: 26px;
+
+    &--center {
+        text-align: center;
+    }
 
     p {
         margin: 0 0 40px;

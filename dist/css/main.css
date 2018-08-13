@@ -473,7 +473,7 @@ ol {
   position: relative; }
 
 .header {
-  background: fixed url(../../img/header-bg.jpg) center/cover no-repeat;
+  background: fixed url(../img/header-bg.jpg) center/cover no-repeat;
   min-height: 880px; }
   .header__top {
     display: -webkit-box;
@@ -623,12 +623,82 @@ ol {
               transform: translateX(-50%); }
 
 .text {
-  text-align: center;
   margin: 0;
   font-size: 1rem;
   font-weight: 300;
   line-height: 26px; }
+  .text--center {
+    text-align: center; }
   .text p {
     margin: 0 0 40px; }
     .text p:last-child {
       margin: 0; }
+
+.app {
+  background: #f7f7f7;
+  padding: 102px 0; }
+  .app__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .app__left {
+    width: 55%; }
+  .app__right {
+    width: 45%; }
+  .app__image-wrap {
+    /*padding-right: 120px;*/
+    margin-bottom: -102px;
+    overflow: hidden; }
+  .app__image {
+    width: 100%;
+    max-width: 548px;
+    margin: 0 0 -180px -28px; }
+  .app__text {
+    margin-bottom: 30px; }
+  .app__icon-link {
+    text-decoration: none;
+    margin-right: 10px; }
+
+.testimonials {
+  padding: 80px 0;
+  background: #4a3949 url(../img/testimonials-bg.jpg) center/cover no-repeat;
+  min-height: 460px; }
+
+.slider {
+  background: none;
+  border: none; }
+  .slider__image-wrap {
+    width: 103px;
+    height: 102px;
+    margin: 0 auto 26px; }
+  .slider__image {
+    border: 5px solid #948a94;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+  .slider__quote-wrap {
+    /*margin-bottom: 42px;*/
+    margin: 0; }
+  .slider__quote {
+    font-size: 1.875rem;
+    font-weight: 100;
+    line-height: 44px;
+    color: #FFF;
+    text-align: center;
+    margin: 0 0 30px; }
+  .slider__author {
+    font-size: 1.125rem;
+    font-weight: 100;
+    color: #FFF;
+    text-align: center; }
+  .slider .flex-control-paging li a {
+    background: rgba(255, 255, 255, 0.5);
+    line-height: 11px; }
+  .slider .flex-control-paging li a.flex-active {
+    background: #fff; }
+  .slider .flex-control-nav {
+    bottom: -56px; }

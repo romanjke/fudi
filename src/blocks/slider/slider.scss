@@ -1,0 +1,57 @@
+.slider {
+    background: none;
+    border: none;
+
+    &__list {
+
+    }
+
+    &__image-wrap {
+        width: 103px;
+        height: 102px;
+        margin: 0 auto 26px;
+    }
+
+    &__image {
+        border: 5px solid #948a94;
+        border-radius: 50%;
+    }
+
+    &__quote-wrap {
+        /*margin-bottom: 42px;*/
+        margin: 0;
+    }
+
+    &__quote {
+        font-size: 1.875rem;
+        font-weight: 100;
+        line-height: 44px;
+        color: #FFF;
+        text-align: center;
+        margin: 0 0 30px;
+    }
+
+    &__author {
+        font-size: 1.125rem;
+        font-weight: 100;
+        color: #FFF;
+        text-align: center;
+    }
+
+    .flex-control-paging {
+        li {
+            a {
+                background: rgba(255, 255, 255, 0.5);
+                line-height: 11px;
+            }
+
+            a.flex-active {
+                background: #fff;
+            }
+        }
+    }
+
+    .flex-control-nav {
+        bottom: -56px;
+    }
+}

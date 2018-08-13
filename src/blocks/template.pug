@@ -2,6 +2,8 @@ include head/head
 include header/header
 include nav/nav
 include about/about
+include app/app
+include testimonials/testimonials
 
 doctype html
 html(lang="ru")
@@ -26,6 +28,11 @@ html(lang="ru")
                 block about
                     +about()
 
+                block app
+                    +app()
+
+                block testimonials
+                    +testimonials()
 
                 block scripts
                     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
@@ -36,6 +43,10 @@ html(lang="ru")
 
                     // build:js js/jquery.nav.js
                     script( src="js/jquery.nav.js")
+                    // endbuild
+
+                    // build:js js/jquery.flexslider.js
+                    script( src="js/jquery.flexslider.js")
                     // endbuild
 
                     // build:js js/main.js
