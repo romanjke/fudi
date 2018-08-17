@@ -794,3 +794,29 @@ ol {
   .cuisines__summary-desc {
     font-size: 1rem;
     font-weight: 300; }
+
+.footer {
+  background: #F7F7F7;
+  padding: 41px 0;
+  color: #8b8b8b; }
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .footer__copy {
+    font-size: 0.875rem;
+    font-weight: 300; }
+  .footer__designby {
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .footer__link {
+    text-decoration: none;
+    color: #000; }
+    .footer__link:hover {
+      color: #f35d4d; }

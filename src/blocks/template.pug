@@ -5,6 +5,7 @@ include about/about
 include app/app
 include testimonials/testimonials
 include cuisines/cuisines
+include footer/footer
 
 doctype html
 html(lang="ru")
@@ -37,6 +38,9 @@ html(lang="ru")
 
                 block cuisines
                     +cuisines()
+
+                block footer
+                    +footer()
 
                 block scripts
                     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
