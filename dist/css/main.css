@@ -357,7 +357,7 @@ th {
   padding: 0; }
 
 body {
-  font-family: Lato, sans-serif;
+  font-family: Lato, sans-serif, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   font-style: normal;
@@ -702,3 +702,95 @@ ol {
     background: #fff; }
   .slider .flex-control-nav {
     bottom: -56px; }
+
+.cuisines {
+  padding: 100px 0 60px;
+  text-align: center;
+  border-bottom: 1px solid #e2e2e2; }
+  .cuisines__title {
+    margin-bottom: 50px; }
+  .cuisines__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin: 0 0 60px 0;
+    padding: 0;
+    background: #f37264; }
+  .cuisines__item {
+    margin: 0 auto;
+    width: 20%; }
+  .cuisines__title-wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .cuisines__subtitle {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.55);
+    /*margin-bottom: 10px;*/ }
+  .cuisines__list-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.55); }
+  .cuisines__image {
+    width: 100%;
+    max-width: 320px; }
+  .cuisines__link {
+    position: relative;
+    max-width: 320px;
+    /*height: 225px;*/
+    height: auto;
+    display: block;
+    padding: 76px 0;
+    background-position: center;
+    -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: #FFF; }
+    .cuisines__link:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    .cuisines__link:hover:after {
+      background: rgba(0, 0, 0, 0.3); }
+  .cuisines__summary-list {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    /*line-height: 30px;*/ }
+  .cuisines__summary-count {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 18px; }
+  .cuisines__summary-desc {
+    font-size: 1rem;
+    font-weight: 300; }

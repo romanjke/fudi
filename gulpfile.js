@@ -136,7 +136,7 @@ gulp.task('fontsBuild', function() {
 
 //default
 gulp.task('default', gulp.series(
-		gulp.parallel('pug', 'sass', 'scripts', 'imgBuild', 'fontsBuild', 'vendor:css', 'vendor:js'),
+		gulp.parallel('pug', 'sass', 'scripts', 'imgBuild', 'fontsBuild', 'vendor:css', 'vendor:js', 'sprite'),
 		gulp.parallel('browser-sync', 'watch')
 	)
 );
@@ -144,7 +144,7 @@ gulp.task('default', gulp.series(
 //production
 gulp.task('prod', gulp.series(
 		'clean',
-		gulp.parallel('pug', 'sass', 'scripts', 'imgBuild', 'fontsBuild', 'vendor:css', 'vendor:js'),
+		gulp.parallel('pug', 'sass', 'scripts', 'imgBuild', 'fontsBuild', 'vendor:css', 'vendor:js', 'sprite'),
 		'useref'
 	)
 );

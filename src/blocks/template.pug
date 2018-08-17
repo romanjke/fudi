@@ -4,6 +4,7 @@ include nav/nav
 include about/about
 include app/app
 include testimonials/testimonials
+include cuisines/cuisines
 
 doctype html
 html(lang="ru")
@@ -33,6 +34,9 @@ html(lang="ru")
 
                 block testimonials
                     +testimonials()
+
+                block cuisines
+                    +cuisines()
 
                 block scripts
                     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")

@@ -1,0 +1,35 @@
+mixin cuisines()
+    section.cuisines#cuisines
+        h2.cuisines__title.title.title--center Browse by cuisines
+
+        ul.cuisines__list
+            -
+                var subtitles = ['327 Recipes', '856 Recipes', '27 Recipes', '174 Recipes', '731 Recipes',
+                                '237 Recipes', '529 Recipes', '145 Recipes', '327 Recipes', '1.437 Recipes']
+            -
+                var titles = ['italian', 'indian', 'french', 'steakhouse', 'seafood', 'sushi', 'mexican',
+                            'chinese', 'pizza', 'american'];
+
+            each title, key in titles
+                li.cuisines__item
+                    a(href="#" style="background-image: url(img/" + title + ".jpg").cuisines__link
+                        .cuisines__subtitle= subtitles[key]
+                        h3.cuisines__list-title= title
+
+        .container
+            ul.cuisines__summary-list
+                -
+                    var sumItems = [
+                        {count: '23,567', desc: 'Recipes Available'},
+                        {count: '431,729', desc: 'Active Users'},
+                        {count: '892,173', desc: 'Positive Reviews'},
+                        {count: '56,581', desc: 'Photos & Videos'},
+                        {count: '3,182', desc: 'Spices and Herbs'}
+                    ]
+
+                each sumItem in sumItems
+                    li.cusines__summary-item
+                        .cuisines__summary-count= sumItem.count
+                        .cuisines__summary-desc= sumItem.desc
+
+
