@@ -1,13 +1,18 @@
 $(document).ready(function() {
     //bigSlide
-    $('.header__nav-toggle').bigSlide({
+    var bigSlideAPI = ($('.header__nav-toggle').bigSlide({
         side: 'right',
-        speed: 600,
-        menuWidth: '320px'
+        menuWidth: "320px"
+    })).bigSlideAPI;
+    $('.nav__close').click(function(e) {
+        e.preventDefault();
+        bigSlideAPI.view.toggleClose();
     });
 
     //onePageNav
-    $('#menu').onePageNav();
+    $('#menu').onePageNav({
+        filter: ':not(.nav__close)'
+    });
 
     //flexslider
     $('.flexslider').flexslider({

@@ -6,11 +6,17 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     &__copy {
         font-size: 0.875rem;
         font-weight: 300;
+        margin-bottom: 20px;
+
+        @media (min-width: 768px) {
+            margin: 0;
+        }
     }
 
     &__designby {

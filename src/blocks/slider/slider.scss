@@ -23,12 +23,16 @@
     }
 
     &__quote {
-        font-size: 1.875rem;
+        font-size: 1.5rem;
         font-weight: 100;
         line-height: 44px;
         color: #FFF;
         text-align: center;
         margin: 0 0 30px;
+
+        @media (min-width: 320px) {
+            font-size: 1.875rem;
+        }
     }
 
     &__author {

@@ -1,11 +1,11 @@
 .button {
-    padding: 0 78px;
+    padding: 0 30px;
     text-decoration: none;
     color: #fff;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-family: $main-font;
     font-weight: 700;
-    line-height: 62px;
+    line-height: 42px;
     border-radius: 3px;
     text-transform: uppercase;
 
@@ -18,5 +18,11 @@
             background: $main-color;
             border-color: $main-color;
         }
+    }
+
+    @media (min-width: 480px) {
+        padding: 0 78px;
+        font-size: 1.125rem;
+        line-height: 62px;
     }
 }

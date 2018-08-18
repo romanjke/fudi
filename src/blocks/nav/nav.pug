@@ -2,6 +2,8 @@ mixin nav()
     - var items = ['home', 'about', 'app', 'testimonials', 'cuisines']
 
     nav.nav#menu
+        .nav__close-wrapper
+            a(href="#").nav__close x
         ul.nav__list
             each item in items
                 li.nav__item

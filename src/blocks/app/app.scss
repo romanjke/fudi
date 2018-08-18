@@ -5,26 +5,41 @@
     &__wrap {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     &__left {
-        width: 55%;
+        margin: 0 auto 50px;
+
+        @media (min-width: 768px) {
+            width: 55%;
+            margin: 0;
+            padding-right: 120px;
+        }
     }
 
     &__right {
-        width: 45%;
+        @media (min-width: 768px) {
+            width: 45%;
+        }
     }
 
     &__image-wrap {
-        /*padding-right: 120px;*/
-        margin-bottom: -102px;
         overflow: hidden;
+
+        @media (min-width: 768px) {
+            margin: 0 0 -102px -28px;
+        }
     }
 
     &__image {
         width: 100%;
-        max-width: 548px;
-        margin: 0 0 -180px -28px;
+        max-width: 320px;
+        margin: 0 0 -180px;
+
+        @media (min-width: 768px) {
+            max-width: 548px;
+        }
     }
 
     &__text {

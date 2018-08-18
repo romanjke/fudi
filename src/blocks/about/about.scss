@@ -4,12 +4,25 @@
     &__list {
         margin: 0;
         padding: 0;
+
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+
+        /*@media (min-width: 576px) {
+            display: flex;
+            justify-content: space-between;
+        }*/
     }
 
     &__item {
-        width: 360px;
+        /*width: 360px;*/
+        margin-bottom: 30px;
+
+        @media (min-width: 576px) {
+            width: 30.5%;
+            margin: 0;
+        }
     }
 
     &__icon {
