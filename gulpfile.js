@@ -22,7 +22,6 @@ var paths = {
 	blocks: 'src/blocks/',
 	fonts: 'src/fonts/**/*.*',
 	img: 'src/img/**/*.*',
-	vendor: 'src/vendor/',
 	outputDir: 'dist/'
 };
 
@@ -56,18 +55,6 @@ gulp.task('scripts', function() {
 		.pipe(browserSync.stream());
 });
 
-//copy vedor css to outputDir
-gulp.task('vendor:css', function() {
-	return gulp.src(paths.vendor + 'css/*.css')
-		.pipe(gulp.dest(paths.outputDir + 'css/'));
-});
-
-//copy vedor js to outputDir
-gulp.task('vendor:js', function() {
-	return gulp.src(paths.vendor + 'js/*.js')
-		.pipe(gulp.dest(paths.outputDir + 'js/'));
-});
-
 gulp.task('sprite', function(cb) {
 	var spriteData = gulp.src('src/icons/*.png')
 		.pipe(spritesmith({
@@ -88,8 +75,6 @@ gulp.task('watch', function() {
 	gulp.watch(paths.blocks + '**/*.js', gulp.series('scripts'));
 	gulp.watch(paths.img, gulp.series('imgBuild'));
 	gulp.watch(paths.fonts, gulp.series('fontsBuild'));
-	gulp.watch(paths.vendor + 'css/*.css', gulp.series('vendor:css'));
-	gulp.watch(paths.vendor + 'js/*.js', gulp.series('vendor:js'));
 });
 
 //server
@@ -136,7 +121,7 @@ gulp.task('fontsBuild', function() {
 
 //default
 gulp.task('default', gulp.series(
-		gulp.parallel('pug', 'sass', 'scripts', 'imgBuild', 'fontsBuild', 'vendor:css', 'vendor:js', 'sprite'),
+		gulp.parallel('pug', 'sass', 'scripts', 'imgBuild', 'fontsBuild', 'sprite'),
 		gulp.parallel('browser-sync', 'watch')
 	)
 );
@@ -144,7 +129,7 @@ gulp.task('default', gulp.series(
 //production
 gulp.task('prod', gulp.series(
 		'clean',
-		gulp.parallel('pug', 'sass', 'scripts', 'imgBuild', 'fontsBuild', 'vendor:css', 'vendor:js', 'sprite'),
+		gulp.parallel('pug', 'sass', 'scripts', 'imgBuild', 'fontsBuild', 'sprite'),
 		'useref'
 	)
 );

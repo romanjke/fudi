@@ -18,29 +18,25 @@
       <meta content="Find your favorite recipes" name="description"/>
       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
       <meta name="viewport" content="width=device-width"/>
-      <!-- build:css css/slideout.css-->
-      <link rel="stylesheet" href="css/slideout.css"/>
-      <!-- endbuild-->
-      <!-- build:css css/flexslider.css-->
-      <link rel="stylesheet" href="css/flexslider.css"/>
-      <!-- endbuild-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/flexslider.min.css"/>
       <!-- build:css css/main.css-->
       <link rel="stylesheet" href="css/main.css"/>
       <!-- endbuild-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"/>
     </head>
     <body id="home">
       <header class="header">
         <div class="container">
           <div class="header__top">
-            <div class="header__logo"><img src="img/logo.png" alt="Logo"/></div>
-            <div class="header__links"><a class="header__link" href="#">Log&nbsp;in</a><a class="header__link" href="#">Sign&nbsp;up</a><a class="header__link" href="#menu">
+            <div class="header__logo" data-aos="slideInLeft"><img src="img/logo.png" alt="Logo"/></div>
+            <div class="header__links" data-aos="slideInRight"><a class="header__link" href="#">Log&nbsp;in</a><a class="header__link" href="#">Sign&nbsp;up</a><a class="header__link" href="#menu">
                 <svg class="header__nav-toggle" width="14" height="10" viewBox="0 0 14 10">
                   <rect y="0" width="14" height="2"></rect>
                   <rect y="4" width="14" height="2"></rect>
                   <rect y="8" width="14" height="2"></rect>
                 </svg></a></div>
           </div>
-          <div class="header__content">
+          <div class="header__content" data-aos="zoomIn">
             <div class="header__about">Find your Favorite</div>
             <h1 class="header__title">recipes</h1>
             <button class="button button--transparent header__button">Get started</button>
@@ -51,7 +47,7 @@
       <section class="about" id="about">
         <div class="container">
           <ul class="about__list">
-            <li class="about__item">
+            <li class="about__item" data-aos="bounceInUp">
               <div class="about__icon"><i class="icon icon--gamburger icon--center"></i></div>
               <h2 class="title title--center">Get inspired</h2>
               <div class="text text--center">
@@ -62,7 +58,7 @@
                 </p>
               </div>
             </li>
-            <li class="about__item">
+            <li class="about__item" data-aos="bounceInUp">
               <div class="about__icon"><i class="icon icon--money icon--center"></i></div>
               <h2 class="title title--center">Get rewarded</h2>
               <div class="text text--center">
@@ -73,7 +69,7 @@
                 </p>
               </div>
             </li>
-            <li class="about__item">
+            <li class="about__item" data-aos="bounceInUp">
               <div class="about__icon"><i class="icon icon--cook icon--center"></i></div>
               <h2 class="title title--center">Get social</h2>
               <div class="text text--center">
@@ -91,9 +87,9 @@
         <div class="container">
           <div class="app__wrap">
             <div class="app__left">
-              <div class="app__image-wrap"><img class="app__image" src="img/iphone.png" alt="iPhone"/></div>
+              <div class="app__image-wrap"><img class="app__image" src="img/iphone.png" alt="iPhone" data-aos="slideInUp"/></div>
             </div>
-            <div class="app__right">
+            <div class="app__right" data-aos="fadeIn">
               <h2 class="title">Introducing the fudi app</h2>
               <div class="app__text text">
                 <p>
@@ -116,14 +112,14 @@
                   
                 </p>
               </div>
-              <div class="app__icons"><a class="app__icon-link" href="#"><img src="img/appstore.png" alt="App Store"/></a><a class="app__icon-link" href="#"><img src="img/googleplay.png" alt="Google play"/></a></div>
+              <div class="app__icons"><a class="app__icon-link" href="#"><img src="img/appstore.png" alt="App Store" data-aos="bounceIn"/></a><a class="app__icon-link" href="#"><img src="img/googleplay.png" alt="Google play" data-aos="bounceIn"/></a></div>
             </div>
           </div>
         </div>
       </section>
       <section class="testimonials" id="testimonials">
         <div class="container">
-          <div class="flexslider slider">
+          <div class="flexslider slider" data-aos="fadeInUp">
             <ul class="slides slider__list">
               <li class="slider__item">
                 <div class="slider__image-wrap"><img class="slider__image" src="img/dawson-m.jpg" alt="Michael Dawson"/></div>
@@ -168,56 +164,56 @@
       <section class="cuisines" id="cuisines">
         <h2 class="cuisines__title title title--center">Browse by cuisines</h2>
         <ul class="cuisines__list">
-          <li class="cuisines__item"><a class="cuisines__link" href="#" style="background-image: url(img/italian.jpg">
+          <li class="cuisines__item" data-aos="fadeInUp delay-1"><a class="cuisines__link" href="#" style="background-image: url(img/italian.jpg">
               <div class="cuisines__subtitle">327 Recipes</div>
               <h3 class="cuisines__list-title">italian</h3></a></li>
-          <li class="cuisines__item"><a class="cuisines__link" href="#" style="background-image: url(img/indian.jpg">
+          <li class="cuisines__item" data-aos="fadeInUp delay-2"><a class="cuisines__link" href="#" style="background-image: url(img/indian.jpg">
               <div class="cuisines__subtitle">856 Recipes</div>
               <h3 class="cuisines__list-title">indian</h3></a></li>
-          <li class="cuisines__item"><a class="cuisines__link" href="#" style="background-image: url(img/french.jpg">
+          <li class="cuisines__item" data-aos="fadeInUp delay-3"><a class="cuisines__link" href="#" style="background-image: url(img/french.jpg">
               <div class="cuisines__subtitle">27 Recipes</div>
               <h3 class="cuisines__list-title">french</h3></a></li>
-          <li class="cuisines__item"><a class="cuisines__link" href="#" style="background-image: url(img/steakhouse.jpg">
+          <li class="cuisines__item" data-aos="fadeInUp delay-4"><a class="cuisines__link" href="#" style="background-image: url(img/steakhouse.jpg">
               <div class="cuisines__subtitle">174 Recipes</div>
               <h3 class="cuisines__list-title">steakhouse</h3></a></li>
-          <li class="cuisines__item"><a class="cuisines__link" href="#" style="background-image: url(img/seafood.jpg">
+          <li class="cuisines__item" data-aos="fadeInUp delay-5"><a class="cuisines__link" href="#" style="background-image: url(img/seafood.jpg">
               <div class="cuisines__subtitle">731 Recipes</div>
               <h3 class="cuisines__list-title">seafood</h3></a></li>
-          <li class="cuisines__item"><a class="cuisines__link" href="#" style="background-image: url(img/sushi.jpg">
+          <li class="cuisines__item" data-aos="fadeInUp delay-6"><a class="cuisines__link" href="#" style="background-image: url(img/sushi.jpg">
               <div class="cuisines__subtitle">237 Recipes</div>
               <h3 class="cuisines__list-title">sushi</h3></a></li>
-          <li class="cuisines__item"><a class="cuisines__link" href="#" style="background-image: url(img/mexican.jpg">
+          <li class="cuisines__item" data-aos="fadeInUp delay-7"><a class="cuisines__link" href="#" style="background-image: url(img/mexican.jpg">
               <div class="cuisines__subtitle">529 Recipes</div>
               <h3 class="cuisines__list-title">mexican</h3></a></li>
-          <li class="cuisines__item"><a class="cuisines__link" href="#" style="background-image: url(img/chinese.jpg">
+          <li class="cuisines__item" data-aos="fadeInUp delay-8"><a class="cuisines__link" href="#" style="background-image: url(img/chinese.jpg">
               <div class="cuisines__subtitle">145 Recipes</div>
               <h3 class="cuisines__list-title">chinese</h3></a></li>
-          <li class="cuisines__item"><a class="cuisines__link" href="#" style="background-image: url(img/pizza.jpg">
+          <li class="cuisines__item" data-aos="fadeInUp delay-9"><a class="cuisines__link" href="#" style="background-image: url(img/pizza.jpg">
               <div class="cuisines__subtitle">327 Recipes</div>
               <h3 class="cuisines__list-title">pizza</h3></a></li>
-          <li class="cuisines__item"><a class="cuisines__link" href="#" style="background-image: url(img/american.jpg">
+          <li class="cuisines__item" data-aos="fadeInUp delay-10"><a class="cuisines__link" href="#" style="background-image: url(img/american.jpg">
               <div class="cuisines__subtitle">1.437 Recipes</div>
               <h3 class="cuisines__list-title">american</h3></a></li>
         </ul>
         <div class="container">
           <ul class="cuisines__summary-list">
-            <li class="cuisines__summary-item">
+            <li class="cuisines__summary-item" data-aos="fadeInUp">
               <div class="cuisines__summary-count">23,567</div>
               <div class="cuisines__summary-desc">Recipes Available</div>
             </li>
-            <li class="cuisines__summary-item">
+            <li class="cuisines__summary-item" data-aos="fadeInUp">
               <div class="cuisines__summary-count">431,729</div>
               <div class="cuisines__summary-desc">Active Users</div>
             </li>
-            <li class="cuisines__summary-item">
+            <li class="cuisines__summary-item" data-aos="fadeInUp">
               <div class="cuisines__summary-count">892,173</div>
               <div class="cuisines__summary-desc">Positive Reviews</div>
             </li>
-            <li class="cuisines__summary-item">
+            <li class="cuisines__summary-item" data-aos="fadeInUp">
               <div class="cuisines__summary-count">56,581</div>
               <div class="cuisines__summary-desc">Photos &amp; Videos</div>
             </li>
-            <li class="cuisines__summary-item">
+            <li class="cuisines__summary-item" data-aos="fadeInUp">
               <div class="cuisines__summary-count">3,182</div>
               <div class="cuisines__summary-desc">Spices and Herbs</div>
             </li>
@@ -233,15 +229,10 @@
         </div>
       </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <!-- build:js js/bigSlide.js-->
-      <script src="js/bigSlide.js"></script>
-      <!-- endbuild-->
-      <!-- build:js js/jquery.nav.js-->
-      <script src="js/jquery.nav.js"></script>
-      <!-- endbuild-->
-      <!-- build:js js/jquery.flexslider.js-->
-      <script src="js/jquery.flexslider.js"></script>
-      <!-- endbuild-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bigslide.js/0.12.0/bigSlide.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider-min.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <!-- build:js js/main.js-->
       <script src="js/main.js"></script>
       <!-- endbuild-->

@@ -1,1 +1,58 @@
-extends template
+include head/head
+include header/header
+include nav/nav
+include about/about
+include app/app
+include testimonials/testimonials
+include cuisines/cuisines
+include footer/footer
+
+doctype html
+html(lang="ru")
+
+    block nav
+        +nav()
+
+    .page.push
+
+        block head
+            head
+                +head({
+                    "title": "Fudi",
+                    "author": "Bekades",
+                    "description": "Find your favorite recipes"
+                })
+
+            body#home
+                block header
+                    +header()
+
+                block about
+                    +about()
+
+                block app
+                    +app()
+
+                block testimonials
+                    +testimonials()
+
+                block cuisines
+                    +cuisines()
+
+                block footer
+                    +footer()
+
+                block scripts
+                    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+
+                    script(src="https://cdnjs.cloudflare.com/ajax/libs/bigslide.js/0.12.0/bigSlide.min.js")
+
+                    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js")
+
+                    script(src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider-min.js")
+
+                    script(src="https://unpkg.com/aos@next/dist/aos.js")
+
+                    // build:js js/main.js
+                    script(src="js/main.js")
+                    // endbuild

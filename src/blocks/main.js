@@ -4,6 +4,7 @@ $(document).ready(function() {
         side: 'right',
         menuWidth: "320px"
     })).bigSlideAPI;
+
     $('.nav__close').click(function(e) {
         e.preventDefault();
         bigSlideAPI.view.toggleClose();
@@ -18,5 +19,12 @@ $(document).ready(function() {
     $('.flexslider').flexslider({
         animation: "slide",
         directionNav: false
+    });
+
+    //AOS
+    AOS.init({
+        useClassNames: true,
+        initClassName: false,
+        animatedClassName: 'animated',
     });
 });

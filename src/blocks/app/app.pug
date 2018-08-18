@@ -4,9 +4,9 @@ mixin app()
             .app__wrap
                 .app__left
                     .app__image-wrap
-                        img(src="img/iphone.png" alt="iPhone").app__image
+                        img(src="img/iphone.png" alt="iPhone" data-aos="slideInUp").app__image
 
-                .app__right
+                .app__right(data-aos="fadeIn")
                     h2.title Introducing the fudi app
 
                     .app__text.text
@@ -28,6 +28,6 @@ mixin app()
 
                     .app__icons
                         a(href="#").app__icon-link
-                            img(src="img/appstore.png" alt="App Store")
+                            img(src="img/appstore.png" alt="App Store" data-aos="bounceIn")
                         a(href="#").app__icon-link
-                            img(src="img/googleplay.png" alt="Google play")
+                            img(src="img/googleplay.png" alt="Google play" data-aos="bounceIn")

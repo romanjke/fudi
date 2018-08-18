@@ -11,7 +11,7 @@ mixin cuisines()
                             'chinese', 'pizza', 'american'];
 
             each title, key in titles
-                li.cuisines__item
+                li.cuisines__item(data-aos="fadeInUp delay-" + (key+1))
                     a(href="#" style="background-image: url(img/" + title + ".jpg").cuisines__link
                         .cuisines__subtitle= subtitles[key]
                         h3.cuisines__list-title= title
@@ -28,6 +28,6 @@ mixin cuisines()
                     ]
 
                 each sumItem in sumItems
-                    li.cuisines__summary-item
+                    li.cuisines__summary-item(data-aos="fadeInUp")
                         .cuisines__summary-count= sumItem.count
                         .cuisines__summary-desc= sumItem.desc
