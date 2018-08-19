@@ -6,6 +6,7 @@
 > https://nodejs.org/en/download/
 
 * `npm`
+
 Обновить `npm` до последней версии
 > npm install npm@latest -g
 
@@ -15,7 +16,7 @@
 ## Установка проекта
 
 * Склонировать данный репозиторий
-> git clone git@github.com:romanjke/fudi.git
+> git clone https://github.com/romanjke/fudi.git
 
 * В терминале перейти в папку проекта и запустить команду `npm install`. Это приведет к установке всех пакетов, которые указанны в файле
 `package.json`, а также их зависимостей.
