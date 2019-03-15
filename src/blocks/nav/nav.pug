@@ -1,10 +1,8 @@
-mixin nav()
-    - var items = ['home', 'about', 'app', 'testimonials', 'cuisines']
-
-    nav.nav#menu
+mixin nav(data)
+    nav.nav#nav
         .nav__close-wrapper
             a(href="#").nav__close x
         ul.nav__list
-            each item in items
+            each item in data
                 li.nav__item
                     a(href="#" + item).nav__link= item

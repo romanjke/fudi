@@ -1,18 +1,18 @@
 .nav {
     padding: 35px;
-    background: #161616;
     font-size: 0.875rem;
     text-transform: uppercase;
+    background: #161616;
 
     &__close-wrapper {
         text-align: right;
     }
 
     &__close {
-        text-decoration: none;
-        color: #fff;
         font-size: 1.2rem;
         font-weight: 900;
+        color: #fff;
+        text-decoration: none;
 
         &:hover {
             color: $main-color;
@@ -22,6 +22,7 @@
     &__list {
         margin: 15px 0;
         padding: 0;
+        letter-spacing: 0.05em;
     }
 
     &__item {
@@ -30,9 +31,9 @@
 
     &__link {
         display: block;
+        padding: 15px;
         color: #fff;
         text-decoration: none;
-        padding: 15px;
 
         &:hover {
             color: $main-color;

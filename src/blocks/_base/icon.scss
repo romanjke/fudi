@@ -1,8 +1,8 @@
 .icon {
     display: inline-block;
 
-    &--gamburger {
-        @include sprite($gamburger);
+    &--hamburger {
+        @include sprite($hamburger);
     }
 
     &--money {

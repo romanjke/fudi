@@ -5,54 +5,103 @@ include about/about
 include app/app
 include testimonials/testimonials
 include cuisines/cuisines
+include summary/summary
 include footer/footer
+include svg-icon/svg-icon
 
 doctype html
 html(lang="ru")
+    block head
+        head
+            +head({
+                "title": "Fudi",
+                "author": "Roman",
+                "description": "Fudi Responsive Landing Page"
+            })
 
-    block nav
-        +nav()
+    body.page.push#home
+        block svg
+            include ../../dist/img/sprite.svg
 
-    .page.push
+        block nav
+            - var nav_items = ['home', 'about', 'app', 'testimonials', 'cuisines', 'summary']
 
-        block head
-            head
-                +head({
-                    "title": "Fudi",
-                    "author": "Bekades",
-                    "description": "Find your favorite recipes"
-                })
+            +nav(nav_items)
 
-            body#home
-                block header
-                    +header()
+        block header
+            +header()
 
-                block about
-                    +about()
+        block about
+            -
+                var about_items = [
+                    {image: ['hamburger', 'center', 'red'],
+                    title: 'Get inspired',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.'},
+                    {image: ['money', 'center', 'red'],
+                    title: 'Get rewarded',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.'},
+                    {image: ['cook', 'center', 'red'],
+                    title: 'Get social',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.'}
+                ];
 
-                block app
-                    +app()
+            +about(about_items)
 
-                block testimonials
-                    +testimonials()
+        block app
+            +app()
 
-                block cuisines
-                    +cuisines()
+        block testimonials
+            -
+                var testi_items = [
+                    {image: 'person.jpg',
+                    author: 'Michael Dawson',
+                    quote: 'I am so happy because I found this recipe, and it just made my life easier. Thanks  so much for sharing!',
+                    city: 'San Francisco, CA'},
+                    {image: 'person.jpg',
+                    author: 'John Smith',
+                    quote: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ad maiores delectus sit at ipsa.',
+                    city: 'Los Angeles, CA'},
+                    {image: 'person.jpg',
+                    author: 'Jack Brown',
+                    quote: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dignissimos, neque maiores. Necessitatibus eveniet molestias ea architecto magnam?Beatae, illo.',
+                    city: 'New York, NY'}
+                ];
 
-                block footer
-                    +footer()
+            +testimonials(testi_items)
 
-                block scripts
-                    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        block cuisines
+            -
+                var cuisines_items = {
+                    count: ['327 Recipes', '856 Recipes', '27 Recipes', '174 Recipes', '731 Recipes',
+                        '237 Recipes', '529 Recipes', '145 Recipes', '327 Recipes', '1.437 Recipes'],
+                    titles: ['italian', 'indian', 'french', 'steakhouse', 'seafood', 'sushi', 'mexican',
+                        'chinese', 'pizza', 'american']
+                };
 
-                    script(src="https://cdnjs.cloudflare.com/ajax/libs/bigslide.js/0.12.0/bigSlide.min.js")
+            +cuisines(cuisines_items)
 
-                    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js")
+        block summary
+            -
+                var summary_items = [
+                    {count: '23,567', desc: 'Recipes Available'},
+                    {count: '431,729', desc: 'Active Users'},
+                    {count: '892,173', desc: 'Positive Reviews'},
+                    {count: '56,581', desc: 'Photos & Videos'},
+                    {count: '3,182', desc: 'Spices and Herbs'}
+                ];
 
-                    script(src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider-min.js")
+            +summary(summary_items)
 
-                    script(src="https://unpkg.com/aos@next/dist/aos.js")
+        block footer
+            +footer(summary_items)
 
-                    // build:js js/main.js
-                    script(src="js/main.js")
-                    // endbuild
+        block scripts
+            script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/bigslide.js/0.12.0/bigSlide.min.js")
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js")
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider-min.js")
+            script(src="https://unpkg.com/aos@next/dist/aos.js")
+
+            // build:js js/main.js
+            script(src="js/main.js")
+            // endbuild

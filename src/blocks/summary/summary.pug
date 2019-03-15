@@ -1,0 +1,8 @@
+mixin summary(data)
+    section.summary#summary
+        .container.summary__container
+            ul.summary__list
+                each item in data
+                    li.summary__item(data-aos="fadeInUp")
+                        .summary__count= item.count
+                        .summary__desc= item.desc

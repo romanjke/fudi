@@ -20,17 +20,17 @@ $cook-total-width: 120px;
 $cook-total-height: 92px;
 $cook-image: '../img/sprite.png';
 $cook: (0px, 0px, 0px, 0px, 60px, 60px, 120px, 92px, '../img/sprite.png', 'cook', );
-$gamburger-name: 'gamburger';
-$gamburger-x: 60px;
-$gamburger-y: 0px;
-$gamburger-offset-x: -60px;
-$gamburger-offset-y: 0px;
-$gamburger-width: 60px;
-$gamburger-height: 60px;
-$gamburger-total-width: 120px;
-$gamburger-total-height: 92px;
-$gamburger-image: '../img/sprite.png';
-$gamburger: (60px, 0px, -60px, 0px, 60px, 60px, 120px, 92px, '../img/sprite.png', 'gamburger', );
+$hamburger-name: 'hamburger';
+$hamburger-x: 60px;
+$hamburger-y: 0px;
+$hamburger-offset-x: -60px;
+$hamburger-offset-y: 0px;
+$hamburger-width: 60px;
+$hamburger-height: 60px;
+$hamburger-total-width: 120px;
+$hamburger-total-height: 92px;
+$hamburger-image: '../img/sprite.png';
+$hamburger: (60px, 0px, -60px, 0px, 60px, 60px, 120px, 92px, '../img/sprite.png', 'hamburger', );
 $money-name: 'money';
 $money-x: 0px;
 $money-y: 60px;
@@ -45,7 +45,7 @@ $money: (0px, 60px, 0px, -60px, 60px, 32px, 120px, 92px, '../img/sprite.png', 'm
 $spritesheet-width: 120px;
 $spritesheet-height: 92px;
 $spritesheet-image: '../img/sprite.png';
-$spritesheet-sprites: ($cook, $gamburger, $money, );
+$spritesheet-sprites: ($cook, $hamburger, $money, );
 $spritesheet: (120px, 92px, '../img/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables

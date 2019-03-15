@@ -1,18 +1,15 @@
 .cuisines {
-    padding: 100px 0 60px;
+    padding-top: 98px;
     text-align: center;
-    border-bottom: 1px solid #e2e2e2;
 
     &__title {
-        margin-bottom: 50px;
+        margin-bottom: 48px;
     }
 
     &__list {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin: 0 0 60px 0;
-        padding: 0;
         background: #f37264;
     }
 
@@ -30,19 +27,22 @@
         @include center-xy();
     }
 
-    &__subtitle {
-        font-family: 'Times New Roman', sans-serif;
+    &__item-count {
+        margin-bottom: 5px;
+        font-family: $sec-font;
         font-size: 0.9375rem;
         font-weight: 700;
         font-style: italic;
+        letter-spacing: 0.05em;
         text-shadow: 0px 0px 40px rgba(0,0,0,0.55);
     }
 
-    &__list-title {
+    &__item-title {
+        margin: 0;
         font-size: 2.25rem;
         font-weight: 700;
+        letter-spacing: 0.05em;
         text-transform: uppercase;
-        margin: 0;
         text-shadow: 0px 0px 40px rgba(0,0,0,0.55);
     }
 
@@ -52,18 +52,18 @@
     }
 
     &__link {
+        display: block;
         position: relative;
         /*max-width: 320px;
         height: 225px;*/
         width: 100%;
         height: 100%;
-        display: block;
-        padding: 76px 0;
+        padding: 74px 0;
         background-position: center;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         text-decoration: none;
-        color: #FFF;
+        color: #fff;
 
         &:after {
             position: absolute;
@@ -78,38 +78,5 @@
         &:hover:after {
             background: rgba(0,0,0,0.3);
         }
-    }
-
-    &__summary-list {
-        margin: 0;
-        padding: 0;
-
-        @media (min-width: 768px) {
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-
-    &__summary-item {
-        margin-bottom: 30px;
-
-        @media (min-width: 768px) {
-            margin: 0;
-        }
-    }
-
-    &__summary-count {
-        font-size: 2rem;
-        font-weight: 700;
-        margin-bottom: 18px;
-
-        @media (min-width: 768px) {
-            font-size: 2.25rem;
-        }
-    }
-
-    &__summary-desc {
-        font-size: 1rem;
-        font-weight: 300;
     }
 }

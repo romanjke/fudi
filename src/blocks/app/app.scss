@@ -1,6 +1,11 @@
 .app {
-    background: #f7f7f7;
     padding: 102px 0;
+    background: #f7f7f7;
+
+    &__container {
+        max-width: 1220px;
+        /*padding: 0 10px;*/
+    }
 
     &__wrap {
         display: flex;
@@ -9,18 +14,26 @@
     }
 
     &__left {
-        margin: 0 auto 50px;
+        margin: 0 auto 60px;
 
         @media (min-width: 768px) {
-            width: 55%;
+            /*width: 530px;*/
+            width: 45%;
+            /*margin: 0 0 0 5px;*/
             margin: 0;
-            padding-right: 120px;
         }
     }
 
     &__right {
         @media (min-width: 768px) {
-            width: 45%;
+            /*width: 545px;*/
+            width: 55%;
+            padding-top: 79px;
+            padding-left: 50px;
+        }
+
+        @media (min-width: 992px) {
+            padding-left: 109px;
         }
     }
 
@@ -28,26 +41,30 @@
         overflow: hidden;
 
         @media (min-width: 768px) {
-            margin: 0 0 -102px -28px;
+            /*margin: 0 0 -102px -24px;*/
+            margin: 0 0 -102px -19px;
         }
     }
 
     &__image {
         width: 100%;
         max-width: 320px;
-        margin: 0 0 -180px;
+        /*margin: 0 0 -177px;*/
+        margin-bottom: -105px;
 
         @media (min-width: 768px) {
             max-width: 548px;
+            margin-bottom: -177px;
         }
     }
 
     &__text {
-        margin-bottom: 30px;
+        margin-bottom: 24px;
     }
 
     &__icon-link {
-        text-decoration: none;
+        display: inline-block;
         margin-right: 10px;
+        text-decoration: none;
     }
 }

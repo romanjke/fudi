@@ -1,52 +1,59 @@
 .slider {
-    background: none;
     border: none;
-
-    &__list {
-
-    }
+    background: none;
 
     &__image-wrap {
-        width: 103px;
-        height: 102px;
-        margin: 0 auto 26px;
+        width: 113px;
+        height: 112px;
+        margin: 0 auto 15px;
+        border: 5px solid #948a94;
+        border-radius: 50%;
+        overflow: hidden;
     }
 
     &__image {
-        border: 5px solid #948a94;
-        border-radius: 50%;
+        width: 103px;
+        height: 102px;
     }
 
     &__quote-wrap {
+        width: 80%;
         /*margin-bottom: 42px;*/
-        margin: 0;
+        margin: 0 auto;
+        opacity: 0.4;
     }
 
     &__quote {
+        margin: 0 0 17px;
         font-size: 1.5rem;
         font-weight: 100;
-        line-height: 44px;
-        color: #FFF;
+        line-height: 1.5;
         text-align: center;
-        margin: 0 0 30px;
+        color: #fff;
 
-        @media (min-width: 320px) {
+        @media (min-width: 576px) {
             font-size: 1.875rem;
+            /*line-height: 44px;*/
         }
     }
 
     &__author {
-        font-size: 1.125rem;
+        font-size: 0.875rem;
         font-weight: 100;
-        color: #FFF;
         text-align: center;
+        color: #fff;
+
+        @media (min-width: 576px) {
+            font-size: 1.125rem;
+        }
     }
 
     .flex-control-paging {
         li {
             a {
+                width: 10px;
+                height: 10px;
                 background: rgba(255, 255, 255, 0.5);
-                line-height: 11px;
             }
 
             a.flex-active {
@@ -56,6 +63,11 @@
     }
 
     .flex-control-nav {
-        bottom: -56px;
+        bottom: -50px;
+        line-height: 10px;
+
+        li {
+            margin: 0 5px;
+        }
     }
 }

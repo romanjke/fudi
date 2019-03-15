@@ -1,0 +1,32 @@
+.svg-icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    fill: inherit;
+    stroke: #000;
+
+    &__item {
+        &--no-filled {
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 2px;
+        }
+    }
+
+    <% _.forEach(svg, function(svgItem) { %>
+    &-<%=svgItem.name%> {
+        width: <%= svgItem.width %>px;
+        height: <%= svgItem.height %>px;
+    }
+    <% }); %>
+
+    &--red {
+        stroke: $main-color;
+    }
+
+    &--center {
+        @include center-xy();
+    }
+}
+

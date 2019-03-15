@@ -1,7 +1,11 @@
 .footer {
-    background: #F7F7F7;
-    padding: 41px 0;
+    padding: 38px 0 41px;
+    background: #f7f7f7;
     color: #8b8b8b;
+
+    &__container {
+        padding-right: 11px;
+    }
 
     &__wrapper {
         display: flex;
@@ -10,18 +14,20 @@
     }
 
     &__copy {
+        margin-bottom: 20px;
+        margin-right: 60px;
         font-size: 0.875rem;
         font-weight: 300;
-        margin-bottom: 20px;
 
-        @media (min-width: 768px) {
-            margin: 0;
+        @media (min-width: 576px) {
+            margin-bottom: 0;
         }
     }
 
     &__designby {
         font-size: 0.875rem;
         font-weight: 400;
+        letter-spacing: 0.2em;
         text-transform: uppercase;
     }
 

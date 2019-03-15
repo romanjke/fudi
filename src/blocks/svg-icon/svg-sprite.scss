@@ -1,0 +1,87 @@
+.svg-icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    fill: inherit;
+    stroke: #000;
+
+    &-menu {
+        width: 14px;
+        height: 10px;
+        fill: #fff;
+        stroke: none;
+
+        &:hover{
+            fill: darken($main-color, 5%);
+        }
+    }
+
+    &-hamburger {
+        width: 60px;
+        height: 60px;
+
+        &__inner {
+            .cls-1 {
+                fill: none;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 2px;
+            }
+        }
+    }
+
+    &-money {
+        width: 60px;
+        height: 32px;
+
+        &__inner {
+            .cls-1, .cls-2 {
+                fill: none;
+                stroke-linejoin: round;
+                stroke-width: 2px;
+            }
+
+            .cls-1 {
+                stroke-linecap: round;
+            }
+        }
+    }
+
+    &-cook {
+        width: 60px;
+        height: 60px;
+
+        &__inner {
+            .cls-1, .cls-2 {
+                fill: none;
+                /*stroke: #231f20;*/
+                stroke: $main-color;
+                stroke-linecap: round;
+                stroke-width: 2px;
+            }
+
+            .cls-1 {
+                stroke-miterlimit: 10;
+            }
+
+            .cls-2 {
+                stroke-linejoin: round;
+            }
+
+            .cls-3 {
+                /*fill: #231f20;*/
+                fill: $main-color;
+                stroke: none;
+            }
+        }
+    }
+
+    &--red {
+        stroke: $main-color;
+    }
+
+    &--center {
+        @include center-xy();
+    }
+}
+

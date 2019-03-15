@@ -2,14 +2,16 @@
     margin: 0;
     font-size: 1rem;
     font-weight: 300;
-    line-height: 26px;
+    /*line-height: 26px;*/
+    line-height: 1.6;
+    letter-spacing: 0.05em;
 
     &--center {
         text-align: center;
     }
 
     p {
-        margin: 0 0 40px;
+        margin: 0 0 28px;
 
         &:last-child {
             margin: 0;

@@ -2,18 +2,15 @@ mixin header()
     header.header
         .container
             .header__top
-                .header__logo(data-aos="slideInLeft")
+                a(href="#home" class="header__logo" data-aos="slideInLeft")
                     img(src="img/logo.png" alt="Logo")
                 .header__links(data-aos="slideInRight")
                     a(href="#").header__link Log&nbsp;in
                     a(href="#").header__link Sign&nbsp;up
-                    a(href="#menu").header__link
-                        svg(width="14" height="10" viewBox="0 0 14 10").header__nav-toggle
-                            rect(y="0" width="14" height="2")
-                            rect(y="4" width="14" height="2")
-                            rect(y="8" width="14" height="2")
+                    a(href="#nav").header__link.header__nav-toggle
+                        +svg-icon('menu')
             .header__content(data-aos="zoomIn")
                 .header__about Find your Favorite
                 h1.header__title recipes
-                button.button.button--transparent.header__button Get started
+                a.button.button--transparent.header__button(href="#about") Get started
                 .header__text or send us your own recipes and #[a(href="#").header__text-link get rewarded]!

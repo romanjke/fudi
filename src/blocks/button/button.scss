@@ -1,28 +1,32 @@
 .button {
-    padding: 0 30px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    font-family: $main-font;
-    font-weight: 700;
-    line-height: 42px;
+    display: inline-block;
+    padding: 15px 35px 19px;
     border-radius: 3px;
+    font-family: $main-font;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-decoration: none;
     text-transform: uppercase;
+    color: #fff;
+
+    @media (min-width: 576px) {
+        padding: 20px 77px 24px 77px;
+        font-size: 1.125rem;
+    }
 
     &--transparent {
+        border: 2px solid #fff;
         background: transparent;
         transition: 0.3s;
-        border: 3px solid #fff;
+
+        @media (min-width: 576px) {
+            border-width: 3px;
+        }
 
         &:hover {
             background: $main-color;
             border-color: $main-color;
         }
-    }
-
-    @media (min-width: 480px) {
-        padding: 0 78px;
-        font-size: 1.125rem;
-        line-height: 62px;
     }
 }

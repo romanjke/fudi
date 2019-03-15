@@ -1,4 +1,5 @@
 .header {
+    color: #fff;
     background: fixed url(../img/header-bg.jpg) center/cover no-repeat;
     /*min-height: auto;*/
 
@@ -12,18 +13,18 @@
         @media (min-width: 576px) {
             display: flex;
             justify-content: space-between;
-            /*text-align: left;*/
         }
     }
 
     &__logo {
+        display: block;
         position: relative;
         top: 0;
         left: 0;
 
         @media (min-width: 576px) {
-            top: -2px;
-            left: -30px;
+            top: 0px;
+            left: -31px;
         }
     }
 
@@ -31,86 +32,81 @@
         font-family: $main-font;
         font-size: 0.875rem;
         font-weight: 700;
+        letter-spacing: 0.05em;
         text-transform: uppercase;
+        text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
 
         @media (min-width: 576px) {
-            margin: 0;
             line-height: 110px;
         }
     }
 
     &__link {
-        margin-left: 30px;
+        margin-left: 26px;
         text-decoration: none;
-        color: #FFF;
-        text-shadow: 0px 0px 40px rgba(0,0,0,0.55);
+        color: #fff;
 
         &:hover {
             color: darken($main-color, 5%);
-        }
-    }
-
-    &__nav-toggle {
-        fill: #fff;
-
-        &:hover{
-            fill: darken($main-color, 5%);
         }
     }
 
     &__content {
         padding: 150px 0;
         text-align: center;
-        color: #FFF;
 
         @media (min-width: 576px) {
-             padding: 245px 0 240px;
+            padding: 237px 0 220px;
         }
     }
 
     &__about {
-        font-family: 'Times New Roman';
+        margin: 0 0 6px 22px;
+        font-family: 'Times New Roman', sans-serif;
         font-size:  1.5rem;
         font-weight: 700;
         font-style: italic;
-        margin-bottom: 28px;
-        text-shadow: 0px 0px 40px rgba(0,0,0,0.55);
+        letter-spacing: 0.05em;
+        text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
+        opacity: 0.7;
 
-        @media (min-width: 480px) {
-            font-size:  2.25rem;
+        @media (min-width: 576px) {
+            font-size: 2.25rem;
         }
     }
 
     &__title {
+        margin: 0 0 30px;
         font-size: 4rem;
         font-weight: 700;
+        letter-spacing: 0.05em;
         text-transform: uppercase;
-        margin: 0 0 40px;
-        text-shadow: 0px 0px 40px rgba(0,0,0,0.55);
+        text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
 
-        @media (min-width: 480px) {
+        @media (min-width: 576px) {
             font-size: 6.25rem;
         }
     }
 
     &__text {
         font-size: 0.875rem;
-        text-transform: uppercase;
-        text-shadow: 0px 0px 40px rgba(0,0,0,0.55);
         line-height: 1.4;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
     }
 
     &__text-link {
-        color: #FFF;
         font-weight: 700;
+        color: #fff;
 
         &:hover {
-            color: darken($main-color, 5%);
             text-decoration: none;
+            color: darken($main-color, 5%);
         }
     }
 
     &__button {
-        margin-bottom: 40px;
+        margin-bottom: 36px;
     }
 }

@@ -1,34 +1,11 @@
-mixin about()
+mixin about(data)
     section.about#about
-        .container
+        .container.about__container
             ul.about__list
-                li.about__item(data-aos="bounceInUp")
-                    .about__icon
-                        i.icon.icon--gamburger.icon--center
-                    h2.title.title--center Get inspired
-                    .text.text--center
-                        p.
-                            Lorem ipsum dolor sit amet, consectetur adipisc
-                            Pellentesque vel enim a elit viverra elementuma.
-                            Aliquam erat volutpat.
-                li.about__item(data-aos="bounceInUp")
-                    .about__icon
-                        i.icon.icon--money.icon--center
-                    h2.title.title--center Get rewarded
-                    .text.text--center
-                        p.
-                            Lorem ipsum dolor sit amet, consectetur adipisc
-                            Pellentesque vel enim a elit viverra elementuma.
-                            Aliquam erat volutpat.
-                li.about__item(data-aos="bounceInUp")
-                    .about__icon
-                        i.icon.icon--cook.icon--center
-                    h2.title.title--center Get social
-                    .text.text--center
-                        p.
-                            Lorem ipsum dolor sit amet, consectetur adipisc
-                            Pellentesque vel enim a elit viverra elementuma.
-                            Aliquam erat volutpat.
-
-
-
+                each item in data
+                    li.about__item(data-aos="bounceInUp")
+                        .about__icon
+                            +svg-icon(item.image[0], item.image[1], item.image[2])
+                        h2.title.title--center= item.title
+                        .text.text--center
+                            p= item.text

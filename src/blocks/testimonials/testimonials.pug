@@ -1,33 +1,18 @@
-mixin testimonials()
+mixin testimonials(data)
     section.testimonials#testimonials
         .container
             .flexslider.slider(data-aos="fadeInUp")
                 ul.slides.slider__list
-                    li.slider__item
-                        .slider__image-wrap
-                            img(src="img/dawson-m.jpg" alt="Michael Dawson").slider__image
-                        blockquote.slider__quote-wrap
-                            p.slider__quote.
-                                “I am so happy because I found this recipe, and it just made my life easier.
-                                Thanks  so much for sharing!”
-                            footer.slider__author
-                                cite - Michael Dawson, San Francisco, CA -
-                    li.slider__item
-                        .slider__image-wrap
-                            img(src="img/dawson-m.jpg" alt="Michael Dawson").slider__image
-                        blockquote.slider__quote-wrap
-                            p.slider__quote.
-                                “I am so happy because I found this recipe, and it just made my life easier.
-                                Thanks  so much for sharing!”
-                            footer.slider__author
-                                cite - Michael Dawson, San Francisco, CA -
-                    li.slider__item
-                        .slider__image-wrap
-                            img(src="img/dawson-m.jpg" alt="Michael Dawson").slider__image
-                        blockquote.slider__quote-wrap
-                            p.slider__quote.
-                                “I am so happy because I found this recipe, and it just made my life easier.
-                                Thanks  so much for sharing!”
-                            footer.slider__author
-                                cite - Michael Dawson, San Francisco, CA -
-
+                    each item in data
+                        li.slider__item
+                            .slider__image-wrap
+                                img(src="img/" + item.image alt=item.author).slider__image
+                            blockquote.slider__quote-wrap
+                                if item.quote.length > 145
+                                    p.slider__quote.
+                                        “#{item.quote.substr(0, 145)}...”
+                                else
+                                    p.slider__quote.
+                                        “#{item.quote}”
+                                footer.slider__author
+                                    cite - #{item.author}, #{item.city} -

@@ -1,24 +1,24 @@
 body {
-  font-family: $main-font, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
+    font-family: $main-font;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
 }
 
 html {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 ul,
 ol {
-  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .clearfix {

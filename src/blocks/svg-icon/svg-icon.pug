@@ -1,0 +1,6 @@
+mixin svg-icon(name,color,pos)
+    - color = color ? ' svg-icon--' + color : ''
+    - pos = pos ? ' svg-icon--' + pos : ''
+
+    svg(class="svg-icon svg-icon-" + name + color + pos)
+        use(xlink:href="#" + name)

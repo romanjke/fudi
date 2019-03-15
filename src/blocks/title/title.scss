@@ -1,17 +1,18 @@
 .title {
     position: relative;
+    margin: 0 0 20px;
     font-size: 1.125rem;
     font-weight: 700;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    margin: 0 0 30px;
 
     &:after {
         content: '';
         @include left();
-        background: $main-color;
+        bottom: -8px;
         width: 88px;
         height: 1px;
-        bottom: -10px;
+        background: $main-color;
     }
 
     &--center {
