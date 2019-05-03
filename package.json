@@ -18,7 +18,7 @@
   "homepage": "https://github.com/romanjke/fudi#readme",
   "devDependencies": {
     "browser-sync": "^2.24.6",
-    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp": "^4.0.0",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-cheerio": "^0.6.3",
     "gulp-clean-css": "^3.10.0",
